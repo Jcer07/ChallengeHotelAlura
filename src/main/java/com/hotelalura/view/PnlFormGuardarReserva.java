@@ -446,6 +446,7 @@ public class PnlFormGuardarReserva extends JPanel {
 	private void mostrarDatosHuesped(String dni) {
 		var huespedC = new HuespedController().buscarHuesped(dni);
 		if(huespedC != null) {
+			huesped = huespedC;
 			this.txtNombre.setText(huespedC.getNombre());
 			this.txtApellido.setText(huespedC.getApellido());
 		}
